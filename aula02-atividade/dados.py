@@ -98,3 +98,12 @@ if __name__ == "__main__":
     livros = ler_livros()
     print(f"{len(livros)} livros carregados")
     print("Primeiro livro:", livros[0])
+
+def buscar_por_titulo(livros, busca):
+    resultado = []
+
+    for livro in livros:
+        if busca.lower() in livro["titulo"].lower():
+            resultado.append(livro)
+    return resultado
+
