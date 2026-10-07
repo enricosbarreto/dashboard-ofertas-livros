@@ -5,6 +5,8 @@ import streamlit as st
 
 import dados
 
+print("rodou!")
+
 def montar_tabela(livros):
     """Prepara as linhas que aparecem na tabela, com nomes de coluna amigáveis."""
     tabela = []
